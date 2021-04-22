@@ -1,0 +1,6 @@
+1. Go to dist/AppsToLaunch and insert here shortcuts to .exe 's that you would like to run on business startup
+2.Go back to /dist location
+3.Create shortcut of worklifebalance.exe
+4.Instert this shortcut to your Startup folder (Containing all links to be started on bootup)
+	note: To acces Startup folder, press Windows button+R and type 	shell:startup
+5.Enjoy your worklifebalance app!
