@@ -9,6 +9,9 @@ weekday=today.weekday()
 now = datetime.now()
 hour=now.hour
 
+StartShift=7
+EndShift=18
+
 config_path = os.path.realpath(os.path.dirname(sys.argv[0]))
 #determine if application is a script file or frozen exe
 if getattr(sys, 'frozen', False):
@@ -24,9 +27,11 @@ for app in apps:
     applist.append(directpath)
     
 
-if(weekday<5 and hour <17 and hour >7):   
-     for dirs in applist:
-         os.startfile(dirs)
+if(weekday<5 and hour >StartShift and hour <EndShift): 
+    for dirs in applist:
+        os.startfile(dirs)
+    
+
 
 #debug
 # testcommentchange
